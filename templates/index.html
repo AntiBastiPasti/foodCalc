@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rechner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Rechner</h1>
+    <form action="/berechnen" method="post">
+        <label for="summe">Bitte gib ein, wie viel Geld du bezahlt hast:</label><br>
+        <input type="text" id="summe" name="summe"><br><br>
+        <label for="anzahl">Bitte gib ein, wie viele Personen ihr wart:</label><br>
+        <input type="text" id="anzahl" name="anzahl"><br><br>
+        <input type="submit" value="Berechnen">
+    </form>
+</body>
+</html>
